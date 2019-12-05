@@ -3,7 +3,8 @@
 <!--      router-link默认渲染出来的是a标签-->
   <router-link to="/demo" tag="button">表</router-link>
   <router-link to="/HelloWorld" tag="button">HelloWorld</router-link>
-  <router-link v-bind:to="'/user/'+userid" tag="button">user</router-link>
+<!--  <router-link v-bind:to="'/user/'+userid" tag="button">user</router-link>-->
+  <router-link to="/user/" tag="button">user</router-link>
 <!--  <button @click="democlick">demo</button>-->
 <!--  <button @click="helloclick">HelloWorld</button>-->
   <router-view></router-view>
