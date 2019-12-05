@@ -95,31 +95,31 @@
     }
 </script>
 
-<style scoped>
-    /deep/ .ant-modal-header{
-        /*line-height: 10px;*/
-        background: black;
-    }
+<style scoped lang="less">
+    /*/deep/ .ant-modal-content .ant-modal-header {*/
+    /*    !*line-height: 10px;*!*/
+    /*    background: black;*/
+    /*}*/
     /*/deep/ .ant-modal-content .ant-modal-title{*/
     /*    line-height: 14px;*/
     /*}*/
-    /deep/ .ant-btn-lg{
-        height:33px;
-        padding:0 7px;
-    }
-    /deep/ .ant-modal-footer{
-        text-align: center;
-    }
-    .new_white{
-        float: left;
-        margin: 0 25px 15px 0;
-    }
-    .grey{
-        background-color: dimgrey;
-        color: white;
-    }
-    .indicator-new{
-        padding-bottom: 15px;
-    }
-    /deep/ .ant-form-item-label{margin-left: 45px;}
+    /*/deep/ .ant-btn-lg{*/
+    /*    height:33px;*/
+    /*    padding:0 7px;*/
+    /*}*/
+    /*/deep/ .ant-modal-footer{*/
+    /*    text-align: center;*/
+    /*}*/
+    /*.new_white{*/
+    /*    float: left;*/
+    /*    margin: 0 25px 15px 0;*/
+    /*}*/
+    /*.grey{*/
+    /*    background-color: dimgrey;*/
+    /*    color: white;*/
+    /*}*/
+    /*.indicator-new{*/
+    /*    padding-bottom: 15px;*/
+    /*}*/
+
 </style>
