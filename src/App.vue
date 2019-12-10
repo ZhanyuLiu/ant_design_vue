@@ -5,11 +5,19 @@
   <router-link to="/HelloWorld" tag="button">HelloWorld</router-link>
 <!--  <router-link v-bind:to="'/user/'+userid" tag="button">user</router-link>-->
   <router-link to="/user/" tag="button">user</router-link>
+  <!--    query中的内容会直接拼接到网址后面-->
+  <router-link :to="{path:'/profile',query:{name:'why',age:18,height:1.88}}" tag="button">profile</router-link>
 <!--  <button @click="democlick">demo</button>-->
 <!--  <button @click="helloclick">HelloWorld</button>-->
-  <router-view></router-view>
+  <keep-alive>
+    <router-view></router-view>
+  </keep-alive>
+
 <!--      <demo/>-->
 <!--      <HelloWorld></HelloWorld>-->
+
+  <button @click="userclick()">用户</button>
+  <button @click="profileclick()">档案</button>
   </div>
 </template>
 
@@ -37,6 +45,20 @@ export default {
     //   // this.$router.push('/HelloWorld');
     //   this.$router.replace('HelloWorld');
     // }
+
+    userclick() {
+      this.$router.push('/user/'+this.userid)
+    },
+    profileclick() {
+      this.$router.push({
+        path:'/profile',
+        query: {
+          name:'kobe',
+          age:19,
+          height:1.87
+        }
+      })
+    }
   }
 }
 </script>

@@ -215,6 +215,16 @@
         }
       };
     },
+    //vue生命周期
+    created() {
+      // eslint-disable-next-line no-console
+      console.log('created');
+    },
+    //销毁
+    destroyed() {
+      // eslint-disable-next-line no-console
+      console.log('destroyed');
+    },
       components: {
           new_d
       },
